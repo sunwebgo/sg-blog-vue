@@ -25,9 +25,9 @@
                               <div slot="tip" class="el-upload__tip">点击上传头像，只能上传jpg/png文件，且不超过1mb</div>
                             </el-upload>
                         </li>
-                        <li class="username">
+                        <li class="nickname">
                             <span class="leftTitle">昵称</span>
-                            <el-input v-model="userInfoObj.nickname" placeholder="昵称"></el-input> <i  class="fa fa-wa fa-asterisk"></i>
+                            <el-input v-model="userInfoObj.nickName" placeholder="昵称"></el-input> <i  class="fa fa-wa fa-asterisk"></i>
                         </li>
                         <li>
                             <span class="leftTitle">电子邮件</span>
@@ -67,7 +67,7 @@
                         </li>
                         <li class="username">
                             <span class="leftTitle">昵称</span>
-                            <span>{{userInfoObj.nickname?userInfoObj.nickname:"无"}}</span>
+                            <span>{{userInfoObj.nickName?userInfoObj.nickName:"无"}}</span>
 
                         </li>
                         <li>
@@ -128,7 +128,7 @@ import store from '../store'
             saveInfoFun: function(){//保存编辑的用户信息
                 var that = this;
 
-                if(!that.userInfoObj.nickname){ //昵称为必填
+                if(!that.userInfoObj.nickName){ //昵称为必填
                      that.$message.error('昵称为必填项，请填写昵称');
                      return;
                 }
