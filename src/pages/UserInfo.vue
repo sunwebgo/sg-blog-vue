@@ -76,7 +76,7 @@
                         </li>
                         <li>
                             <span class="leftTitle">性别</span>
-                            <span>{{userInfoObj.sex==1?'男':'女'}}</span>
+                            <span>{{userInfoObj.sex==0?'男':'女'}}</span>
                         </li>
 
 
